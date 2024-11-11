@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body, html {
+    height: 100%;  /* Garantir que o body ocupe a altura total da tela */
+}
+
+body {
+    background-color: #000301;
+}
+
+
+/* === Navbar === */
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover {
+    color: #7dd2b0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #04ad69;
+}
+
+.navbar-dark .nav-item a:hover {
+    color: #7dd2b0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/* Container principal */
+.main {
+    display: flex;
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;  /* Centraliza o conteúdo verticalmente */
+    height: 100vh;  /* Garantir que ocupe 100% da altura da tela */
+    text-align: center;  /* Centraliza o texto dentro do contêiner */
+}
+
+.main h2{
+    color: #04ad69;
+    font-size: 24px; /* Tamanho do título principal */
+    margin-bottom: 10px;
+}
+
+/* Estilos para o section "sobre" */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para a imagem */
+.imgperfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;  /* Espaço entre a imagem e o texto */
+}
+
+.imgperfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  /* Torna a imagem circular */
+    object-fit: cover;  /* Ajusta a imagem para preencher o contêiner sem distorção */
+}
+
+.imgperfil img {
+    width: 100%;
+    max-width: 150px;  /* Limita o tamanho máximo da imagem */
+    height: auto;
+}
+
+/* Estilos para o texto */
+.texto {
+    color: #b4b4b4;  /* Cor do texto */
+    font-size: 18px;  /* Tamanho do texto */
+}
+
+.curriculo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding: 20px; /* Adiciona um pouco de espaço ao redor */
+}
+
+/* Estilo do título */
+.titulo-curriculo h2{
+    color: #04ad69;
+    font-size: 24px; /* Tamanho do título principal */
+    margin-bottom: 10px;
+}
+
+.titulo-curriculo h3 {
+    font-size: 20px; /* Tamanho do subtítulo */
+    margin-top: 15px;
+    font-weight: bold;
+    color: #087a4c;
+}
+
+/* Estilo da lista */
+ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li p {
+    font-size: 16px;
+    color: #b4b4b4; /* Cor do texto da lista */
+}
+
+/* Centralização e estilo das imagens dos certificados */
+.img-certificado {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaço entre a imagem e os textos acima */
+}
+
+.img-certificado img {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a imagem */
+    margin-bottom: 20px;
+}
+
+.img-certificado img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}  
+
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding: 20px; /* Espaçamento ao redor da seção */
+}
+
+/* Estilo do título principal e subtítulos */
+.titulo-habilidade h2{
+    color: #04ad69;
+    font-size: 24px; /* Tamanho do título principal */
+    margin-bottom: 10px;
+}
+
+.titulo-habilidade h3 {
+    font-size: 20px; /* Tamanho do subtítulo */
+    margin-top: 15px;
+    font-weight: bold;
+    color: #087a4c;
+}
+
+/* Estilo das listas de habilidades */
+ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.habilidades ul li {
+    font-size: 16px;
+    color: #b4b4b4; /* Cor do texto da lista */
+    margin-bottom: 15px;
+}
+
+/* Estilo do texto dentro das listas */
+.habilidades ul li span {
+    color: #04ad69; /* Destaque para o nome da habilidade */
+    font-weight: bold;
+}
+
+/* Estilo de espaçamento entre as hard skills e soft skills */
+.soft-skills {
+    margin-top: 20px;
+}
+
+/* Estilo para a descrição de cada habilidade */
+.habilidades ul li {
+    color: #b4b4b4; /* Cor padrão para o texto fora do span */
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .habilidades {
+        padding: 10px;
+    }
+
+    .titulo-habilidade h2, .titulo-habilidade h5 {
+        font-size: 20px;
+    }
+    
+    .habilidades ul li {
+        font-size: 14px;
+    }
+}
+
+.experiência {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding: 20px; /* Espaçamento ao redor da seção */
+}
+
+/* Estilo do título principal e subtítulos */
+.titulo-experiência h2 {
+    color: #04ad69;
+    font-size: 24px; /* Tamanho do título principal */
+    margin-bottom: 10px;
+}
+
+.titulo-experiência h3 {
+    font-size: 20px; /* Tamanho do subtítulo */
+    margin-top: 15px;
+    font-weight: bold;
+    color: #087a4c;
+}
+
+/* Estilo das listas de habilidades */
+ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.experiência ul li {
+    font-size: 16px;
+    color: #b4b4b4; /* Cor do texto da lista */
+    margin-bottom: 15px;
+}
+
+/* Estilo do texto dentro das listas */
+.experiência ul li span {
+    color: #04ad69; /* Destaque para o nome da habilidade */
+    font-weight: bold;
+}
+
+/* Estilo para a descrição de cada habilidade */
+.experiência ul li {
+    color: #b4b4b4; /* Cor padrão para o texto fora do span */
+}
+
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding: 20px; /* Espaçamento ao redor da seção */
+}
+
+/* Estilo do título principal e subtítulos */
+.titulo-projetos h2 {
+    color: #04ad69;
+    font-size: 24px; /* Tamanho do título principal */
+    margin-bottom: 10px;
+}
+
+.titulo-projetos h3 {
+    font-size: 20px; /* Tamanho do subtítulo */
+    margin-top: 15px;
+    font-weight: bold;
+    color: #087a4c;
+}
+
+/* Estilo das listas de habilidades */
+ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.projetos ul li {
+    font-size: 16px;
+    color: #b4b4b4; /* Cor do texto da lista */
+    margin-bottom: 15px;
+}
+
+/* Estilo do texto dentro das listas */
+.projetos ul li span {
+    color: #04ad69; /* Destaque para o nome da habilidade */
+    font-weight: bold;
+}
+
+/* Estilo para a descrição de cada habilidade */
+.projetos ul li {
+    color: #b4b4b4; /* Cor padrão para o texto fora do span */
+}
+
+.icons-tec ul {
+    display: flex;
+    flex-wrap: wrap;  /* Faz os ícones quebrarem para a linha seguinte, se necessário */
+    gap: 15px;  /* Espaçamento entre os ícones */
+    list-style-type: none;  /* Remove as marcas de lista (bolinhas) */
+    padding: 0;  /* Remove o padding padrão do <ul> */
+}
+  
+.icons-tec li {
+    display: flex;
+    gap: 10px;  /* Espaço entre os ícones em cada item de lista */
+}
+  
+.icons-tec li img {
+    width: 50px;  /* Define o tamanho fixo dos ícones */
+    height: auto;  /* Mantém a proporção do ícone */
+}
+  
+span {
+    font-size: 1.2em;  /* Aumenta o tamanho do texto "Tecnologias Utilizadas" */
+    font-weight: bold;  /* Deixa o texto mais destacado */
+}
+
+.bi-github {
+    color: #087a4c; /* Cor desejada (exemplo: cinza escuro) */
+    font-size: 25px;
+
+}
+  
+  /* Você também pode usar outras cores, por exemplo: */
+.bi-github:hover {
+    color: #04ad69; /* Cor ao passar o mouse (exemplo: vermelho) */
+}
+
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding: 20px; /* Espaçamento ao redor da seção */
+}
+
+/* Estilo do título principal e subtítulos */
+.titulo-contato h2 {
+    color: #04ad69;
+    font-size: 24px; /* Tamanho do título principal */
+    margin-bottom: 10px;
+}
+
+.titulo-contato h3 {
+    font-size: 20px; /* Tamanho do subtítulo */
+    margin-top: 15px;
+    font-weight: bold;
+    color: #087a4c;
+}
+
+
+.contato ul li {
+    font-size: 16px;
+    color: #b4b4b4; /* Cor do texto da lista */
+    margin-bottom: 15px;
+}
+
+/* Estilo do texto dentro das listas */
+.contato ul li span {
+    color: #04ad69; /* Destaque para o nome da habilidade */
+    font-weight: bold;
+}
+
+/* Estilo para a descrição de cada habilidade */
+.contato ul li {
+    color: #b4b4b4; /* Cor padrão para o texto fora do span */
+}
+
+.icons-tec ul {
+    display: flex;
+    flex-wrap: wrap;  /* Faz os ícones quebrarem para a linha seguinte, se necessário */
+    gap: 15px;  /* Espaçamento entre os ícones */
+    list-style-type: none;  /* Remove as marcas de lista (bolinhas) */
+    padding: 0;  /* Remove o padding padrão do <ul> */
+}
+  
+.icons-tec ul {
+    display: flex;
+    gap: 10px;  /* Espaço entre os ícones em cada item de lista */
+}
+  
+.icons-tec ul {
+    width: 50px;  /* Define o tamanho fixo dos ícones */
+    height: auto;  /* Mantém a proporção do ícone */
+}
+  
+span {
+    font-size: 1.2em;  /* Aumenta o tamanho do texto "Tecnologias Utilizadas" */
+    font-weight: bold;  /* Deixa o texto mais destacado */
+}
+
+.lista-contato{
+    display: flex;
+    justify-content: space-between;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;  /* Centraliza o conteúdo verticalmente */
+    text-align: center;
+    
+}
+
+.bi-linkedin {
+    color: #087a4c; /* Cor desejada (exemplo: cinza escuro) */
+    font-size: 25px;
+
+}
+  
+  /* Você também pode usar outras cores, por exemplo: */
+.bi-linkedin:hover {
+    color: #04ad69; /* Cor ao passar o mouse (exemplo: vermelho) */
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding: 20px;
+    color: #04ad69;
+}
+
+@media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem; /* Tamanho menor para telas pequenas */
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+
+    li {
+      flex: 1 1 100%;  /* Itens ocupam 100% da largura em telas pequenas */
+    }
+
+    .img-projeto {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+      footer p {
+        font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+    }
+}
