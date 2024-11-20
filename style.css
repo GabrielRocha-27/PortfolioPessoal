@@ -5,6 +5,25 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+
+.sobre .texto {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+    padding: 20px;
+}
+
+  /* Configuração para o título */
+.sobre .texto h2 {
+    text-align: center; /* Mantém o título centralizado */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+  
+  /* Configuração para o parágrafo */
+.sobre .texto p {
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+}
+
 body, html {
     height: 100%;  /* Garantir que o body ocupe a altura total da tela */
 }
@@ -48,7 +67,7 @@ body {
     justify-content: center;  /* Centraliza o conteúdo horizontalmente */
     align-items: center;  /* Centraliza o conteúdo verticalmente */
     height: 100vh;  /* Garantir que ocupe 100% da altura da tela */
-    text-align: center;  /* Centraliza o texto dentro do contêiner */
+    text-align: justify;  /* Centraliza o texto dentro do contêiner */
 }
 
 .main h2{
@@ -93,11 +112,10 @@ body {
 }
 
 .curriculo {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto dentro do contêiner */
-    padding: 20px; /* Adiciona um pouco de espaço ao redor */
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+    padding: 20px;
 }
 
 /* Estilo do título */
@@ -149,10 +167,9 @@ li p {
 
 
 .habilidades {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto dentro do contêiner */
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
     padding: 20px; /* Espaçamento ao redor da seção */
 }
 
@@ -215,11 +232,10 @@ ul {
 }
 
 .experiência {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto dentro do contêiner */
-    padding: 20px; /* Espaçamento ao redor da seção */
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+    padding: 20px;
 }
 
 /* Estilo do título principal e subtítulos */
@@ -262,11 +278,10 @@ ul {
 
 
 .projetos {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto dentro do contêiner */
-    padding: 20px; /* Espaçamento ao redor da seção */
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+    padding: 20px;
 }
 
 /* Estilo do título principal e subtítulos */
@@ -343,11 +358,10 @@ span {
 
 
 .contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto dentro do contêiner */
-    padding: 20px; /* Espaçamento ao redor da seção */
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+    padding: 20px;
 }
 
 /* Estilo do título principal e subtítulos */
@@ -409,7 +423,7 @@ span {
     display: flex;
     justify-content: space-between;  /* Centraliza o conteúdo horizontalmente */
     align-items: center;  /* Centraliza o conteúdo verticalmente */
-    text-align: center;
+    text-align: justify;
     
 }
 
@@ -428,7 +442,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto dentro do contêiner */
+    text-align: justify; /* Centraliza o texto dentro do contêiner */
     padding: 20px;
     color: #04ad69;
 }
