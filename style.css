@@ -5,7 +5,9 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-
+a {
+    color: #22ffa7;
+}
 .sobre .texto {
     margin: 0 auto;
     max-width: 800px;
@@ -474,3 +476,4 @@ footer{
         font-size: 0.9rem; /* Ajuste o tamanho da fonte */
     }
 }
+
